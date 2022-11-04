@@ -1,0 +1,25 @@
+@import "../../utils/_variables.scss";
+
+.nav {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+
+  font-weight: 600;
+  background-color: getColor("clr-three");
+  color: getColor("clr-two");
+}
+
+.activeLink {
+  background-color: getColor("clr-five");
+  color: getColor("clr-one");
+}
+
+.notActiveLink {
+  color: red;
+}
+
+.navigationLink {
+  padding: 5px 15px;
+  border-radius: 5px;
+}

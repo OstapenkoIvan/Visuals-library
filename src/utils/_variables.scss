@@ -1,0 +1,12 @@
+$colors: (
+  "clr-one": #412234,
+  "clr-two": #ffffff,
+  "clr-three": #6d466b,
+  "clr-four": #b49fcc,
+  "clr-five": #ead7d7,
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}
+//color: getColor('clr-main');
