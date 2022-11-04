@@ -1,0 +1,19 @@
+.section {
+  position: relative;
+  background-color: rgb(10, 10, 10);
+  height: calc(100vh - 38.5px);
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 50vmin;
+}
+
+.image[data-status="inactive"] {
+  display: none;
+}
+.image[data-status="active"] {
+  display: block;
+}
