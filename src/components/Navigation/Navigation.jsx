@@ -9,20 +9,21 @@ export default function Navigation() {
         className={({ isActive }) =>
           isActive
             ? `${s.activeLink} ${s.navigationLink}`
-            : `${s.notActiveLink}`
+            : `${s.notActiveLink} ${s.navigationLink}`
         }
         to="/"
       >
-        TrailingImages
+        Trail
       </NavLink>
       <NavLink
         className={({ isActive }) => {
           return isActive
             ? `${s.activeLink} ${s.navigationLink}`
-            : s.notActiveLink;
+            : `${s.notActiveLink} ${s.navigationLink}`;
         }}
+        to="/cards"
       >
-        Second
+        Cards
       </NavLink>
     </nav>
   );

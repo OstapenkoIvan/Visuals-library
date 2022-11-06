@@ -9,11 +9,13 @@ import AppBar from "../components/AppBar";
 import ErrorPage from "../utils/ErrorPage";
 
 const TrailingImages = lazy(() => import("../pages/TrailingImages"));
+const Cards = lazy(() => import("../pages/Cards"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<AppBar />} errorElement={<ErrorPage />}>
       <Route index element={<TrailingImages />} errorElement={<ErrorPage />} />
+      <Route path="/cards" element={<Cards />} errorElement={<ErrorPage />} />
     </Route>
   )
 );

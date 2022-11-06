@@ -10,13 +10,18 @@
   color: getColor("clr-two");
 }
 
-.activeLink {
+.notActiveLink {
   background-color: getColor("clr-five");
   color: getColor("clr-one");
 }
+.activeLink:hover,
+.notActiveLink:hover {
+  color: getColor("clr-four");
+}
 
-.notActiveLink {
-  color: red;
+.activeLink {
+  background-color: getColor("clr-one");
+  color: getColor("clr-five");
 }
 
 .navigationLink {
