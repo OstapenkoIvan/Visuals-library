@@ -25,6 +25,16 @@ export default function Navigation() {
       >
         Cards
       </NavLink>
+      <NavLink
+        className={({ isActive }) => {
+          return isActive
+            ? `${s.activeLink} ${s.navigationLink}`
+            : `${s.notActiveLink} ${s.navigationLink}`;
+        }}
+        to="/table"
+      >
+        Table
+      </NavLink>
     </nav>
   );
 }

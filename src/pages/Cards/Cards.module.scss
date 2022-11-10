@@ -1,6 +1,6 @@
 .container {
   background-color: black;
-  height: 100vh;
+  height: calc(100vh - 38.5px);
   display: grid;
   place-items: center;
 }
