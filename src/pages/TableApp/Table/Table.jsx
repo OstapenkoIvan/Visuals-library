@@ -62,6 +62,7 @@ const Table = () => {
       email: "john@wick.com",
     },
   ];
+
   return (
     <div>
       <table className="w-full whitespace-nowrap block overflow-y-auto">
