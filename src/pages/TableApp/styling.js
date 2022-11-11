@@ -1,2 +1,2 @@
-export const cell = "px-2 py-1 text-center";
-export const headerCell = "w-1/5 bg-green-500 font-semibold text-white";
+export const cell = "py-1 w-[130px] text-center";
+export const headerCell = " bg-green-500 font-semibold text-white";
